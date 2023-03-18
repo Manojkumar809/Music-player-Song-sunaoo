@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+body {
+    background-color:rgb(3, 67, 168);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'ubuntu',sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.logo img {
+    width: 40px;
+    border-radius: 50%;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 55px;
+    background-color: black;
+    color: white;
+    
+}
+
+nav ul li {
+    padding: 0px 15px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    color: white;
+    box-shadow: 10px 10px 10px whitesmoke, -10px -10px 10px whitesmoke;
+    font-family: 'ubuntu',sans-serif;
+    font-weight: bolder;
+    padding-left: 13px;
+    padding-top: 10px;
+    height: 75vh;
+    background-image: url(bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px 13vw;
+    border-radius: 5px;
+}
+
+.container .songitem {
+    cursor: pointer;
+}
+
+.bottom {
+    position: sticky;
+    bottom: 0;
+    height: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+#progressbar {
+    width: 80vw;
+    cursor: pointer;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    letter-spacing: 15px;
+    color: white;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.icons:hover {
+    opacity: 1;
+    
+}
+.songlist {
+    overflow: auto;
+}
+.songitem {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+    padding: 7px;
+    margin: 15px 0;
+    height: 30px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.songitem img {
+    border-radius: 50%;
+    height: 38px;
+}
+
+.songinfo {
+    position: absolute;
+    left: 10vw;
+}
+
+.songinfo img {
+    opacity: 0;
+    border-radius: 3px;
+    transition: opacity 0.3s ease-in;
+}
+/* about and feedback pages */
+.aboutcontainer {
+    display: grid;
+    background: black;
+    color: white;
+    overflow: auto;
+    box-shadow: 10px 10px 10px whitesmoke, -10px -10px 10px whitesmoke;
+    font-family: 'ubuntu',sans-serif;
+    font-weight: bolder;
+    padding-left: 13px;
+    padding-top: 10px;
+    height: 75vh;
+    margin: 75px 13vw;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    word-spacing: 7px;
+}
+
+.aboutcontainer h2 {
+    margin-top: 50px;
+}
+.para {
+    line-height: 30px;
+}
+.feedback {
+    background: #dadee6;
+    width: 70vw;
+    height: 20vh;
+    color: black;
+}
+button {
+    width: 30vw;
+    height: 1.5rem;
+}
