@@ -35,7 +35,6 @@ masterPlay.addEventListener('click', ()=> {
     }
     else {
         audioElement.pause();
-        console.log("song is paused")
         masterPlay.classList.add('fa-play-circle');
         masterPlay.classList.remove('fa-pause-circle');
         gif.style.opacity = 0;
